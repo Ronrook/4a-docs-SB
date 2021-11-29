@@ -26,7 +26,7 @@ public class VehiculosController {
         return vehiculosRepository.save(vehiculos);
     }
 
-
+// Método para actualizar las características del vehículo
     @PutMapping("/actualizarVehiculo/{id}")
     Vehiculos updateVehiculo (@RequestBody Vehiculos vehiculos){
         return vehiculosRepository.save(vehiculos);
