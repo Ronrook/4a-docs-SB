@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
+// Clase controlador de Vehiculos
 @RestController
 public class VehiculosController {
 
@@ -15,7 +17,8 @@ public class VehiculosController {
     public VehiculosController (VehiculosRepository vehiculosRepository){
         this.vehiculosRepository = vehiculosRepository;
     }
-
+    
+     // Metodo GET para recuperar vehiculo por su ID
     @GetMapping("/vehiculos/{id}")
     Vehiculos getVehiculos (@PathVariable String id ){
         return vehiculosRepository.findById(id).orElseThrow(() -> new VehiculoNotFoundException("No se encontro vehiculo con el id: " + id));
