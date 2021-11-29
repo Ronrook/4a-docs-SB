@@ -30,7 +30,10 @@ public class VehiculosController {
         return vehiculosRepository.save(vehiculos);
     }
 
-     // Metodo PUT para actualizar datos de un vehiculo con su ID 
+
+// Metodo PUT para actualizar datos de un vehiculo con su ID 
+
+// Método para actualizar las características del vehículo
     @PutMapping("/actualizarVehiculo/{id}")
     Vehiculos updateVehiculo (@RequestBody Vehiculos vehiculos){
         return vehiculosRepository.save(vehiculos);
