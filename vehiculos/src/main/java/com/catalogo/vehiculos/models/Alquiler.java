@@ -14,7 +14,9 @@ public class Alquiler {
     private Date fechaFinal;
     private String lugarEntrega;
     private String lugarRegreso;
-
+    /*
+    Entidad de alquiler para manejar la aplicacion.
+    */
     public Alquiler(String id, String username, String vehiculoId, Date fechaInicio, Date fechaFinal, String lugarEntrega, String lugarRegreso) {
         this.id = id;
         this.username = username;
